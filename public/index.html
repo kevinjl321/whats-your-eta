@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>where's my bart?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="content center-content">
+      <h1 class="title">where's my bart?</h1>
+      <div class="form">
+        <label for="station" class="label">enter station code:</label>
+        <input type="text" id="station" placeholder="e.g., EMBD" class="input">
+        <button id="fetchButton" class="button">find my train!</button>
+      </div>
+      <div id="arrivals" class="arrivals"></div>
+      <div id="loading" class="loading"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
