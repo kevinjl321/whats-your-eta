@@ -8,7 +8,7 @@ app.use(express.static('public'));
 
 app.get('/api/arrivals/:station', async (req, res) => {
   const station = req.params.station;
-  const apiKey = 'MW9S-E7SL-26DU-VV8V'; // Public BART API key
+  const apiKey = 'BART-API-KEY'; // input user-specific bart api key
 
   try {
     const response = await axios.get('https://api.bart.gov/api/etd.aspx', {
