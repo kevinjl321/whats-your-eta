@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  font-family: "Roboto Mono"!important;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -20,7 +26,7 @@ body {
   }
   
   button {
-    background-color: #3490dc;
+    background-color: #e969ba;
     color: #ffffff;
     border: none;
     padding: 0.5rem 1rem;

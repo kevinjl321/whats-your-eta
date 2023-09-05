@@ -26,10 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function formatArrivals(data) {
-      let html = '<h2>Train Arrivals</h2>';
+      let html = '<h2>train arrivals</h2>';
       
       if (!data || !data.etd) {
-        return '<p>No arrivals at this time.</p>';
+        return '<p>no arrivals at this time.</p>';
       }
     
       if (Array.isArray(data.etd)) {
@@ -41,9 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
                    </div>`;
         });
       } else if (data.etd.error) {
-        html += `<p>${data.etd.error}</p>`;
+        html += `<br><p>${data.etd.error}</p>`;
       } else {
-        html += '<p>unexpected data received from the BART API.</p>';
+        html += '<br><p>unexpected data received from the BART API.</p>';
       }
     
       return html;
